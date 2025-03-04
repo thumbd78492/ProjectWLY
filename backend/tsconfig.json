@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",        // 輸出目標 JavaScript 版本
+      "module": "commonjs",       // 模組系統 (Node.js 常用 commonjs)
+      "outDir": "./dist",         // 編譯後的 JavaScript 輸出目錄
+      "rootDir": "./src",         // TypeScript 原始碼根目錄
+      "strict": true,             // 啟用嚴格模式，加強型別檢查
+      "esModuleInterop": true,    // 允許 ES 模組與 CommonJS 模組互操作
+      "skipLibCheck": true,       // 忽略 .d.ts 型別定義檔案的檢查
+      "forceConsistentCasingInFileNames": true, // 強制檔案名稱大小寫一致
+      "resolveJsonModule": true,   // 允許直接 import JSON 檔案
+      "sourceMap": true          // 生成 Source Map 檔案，方便除錯
+    },
+    "include": ["src"],           // 指定要編譯的 TypeScript 檔案目錄
+    "exclude": ["node_modules"]    // 排除 node_modules 目錄
+  }
